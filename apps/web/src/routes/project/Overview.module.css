@@ -1,0 +1,124 @@
+.page {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--sp-6) var(--sp-5);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-6);
+}
+
+.headerText {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.description {
+  color: var(--ink-2);
+  max-width: 480px;
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  max-width: 380px;
+}
+
+.pct {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--ink-2);
+}
+
+.stats {
+  color: var(--ink-3);
+  font-size: var(--text-sm);
+}
+
+.stages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.stageCard {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--sp-3) var(--sp-4);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.stageCard:hover:not(.locked) {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stageNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.done .stageNum {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.stageBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stageTitle {
+  font-weight: 600;
+}
+
+.stageBlurb {
+  color: var(--ink-3);
+  font-size: var(--text-sm);
+}
+
+.stageState {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+
+.done .stageState {
+  color: var(--ok);
+}

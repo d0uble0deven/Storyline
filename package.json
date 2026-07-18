@@ -1,0 +1,31 @@
+{
+  "name": "storyline",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Turn your memories into stories — AI-assisted video storytelling.",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm run dev -w @storyline/api\" \"npm run dev -w @storyline/web\"",
+    "dev:api": "npm run dev -w @storyline/api",
+    "dev:web": "npm run dev -w @storyline/web",
+    "seed": "npm run seed -w @storyline/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.20.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.24.0"
+  }
+}

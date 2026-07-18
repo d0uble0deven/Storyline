@@ -1,0 +1,32 @@
+.track {
+  width: 100%;
+  background: var(--surface-3);
+  border-radius: var(--r-full);
+  overflow: hidden;
+}
+
+.sm {
+  height: 4px;
+}
+
+.md {
+  height: 7px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: var(--r-full);
+  transition: width var(--t-med);
+}
+
+.accent {
+  background: var(--accent);
+}
+
+.ok {
+  background: var(--ok);
+}
+
+.neutral {
+  background: var(--ink-3);
+}

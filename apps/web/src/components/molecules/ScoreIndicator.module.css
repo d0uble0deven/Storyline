@@ -1,0 +1,46 @@
+.row {
+  display: grid;
+  grid-template-columns: 86px 1fr 18px;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-xs);
+}
+
+.label {
+  color: var(--ink-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track {
+  height: 4px;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  border-radius: var(--r-full);
+}
+
+.high {
+  background: var(--ok);
+}
+
+.mid {
+  background: var(--warn);
+}
+
+.low {
+  background: var(--ink-3);
+}
+
+.value {
+  font-weight: 700;
+  text-align: right;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}

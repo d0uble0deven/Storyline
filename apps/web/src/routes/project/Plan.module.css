@@ -1,0 +1,103 @@
+.page {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--sp-8);
+  color: var(--ink-3);
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: var(--text-2xl);
+}
+
+.subtitle {
+  color: var(--ink-2);
+  margin-top: 6px;
+  max-width: 480px;
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.conflict {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: var(--warn-soft);
+  color: var(--warn);
+  font-weight: 500;
+  border-radius: var(--r-md);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.error {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.sectionLocked {
+  background: var(--surface-2);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: var(--text-md);
+}
+
+.sectionBadges {
+  display: flex;
+  gap: 6px;
+}
+
+.sectionActions {
+  margin-left: auto;
+  display: flex;
+  gap: 2px;
+}
+
+.applyRow {
+  display: flex;
+  gap: var(--sp-2);
+}

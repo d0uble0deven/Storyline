@@ -1,0 +1,51 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  border-radius: var(--r-md);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.sm {
+  width: 26px;
+  height: 26px;
+}
+
+.md {
+  width: 32px;
+  height: 32px;
+}
+
+.iconButton:hover:not(:disabled) {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.iconButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.active:hover:not(:disabled) {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.danger:hover:not(:disabled) {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.accent:hover:not(:disabled) {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

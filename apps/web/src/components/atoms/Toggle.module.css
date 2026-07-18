@@ -1,0 +1,67 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--ink-3);
+}
+
+.track {
+  position: relative;
+  width: 38px;
+  height: 22px;
+  flex: none;
+  border-radius: var(--r-full);
+  background: var(--line-strong);
+  transition: background var(--t-fast);
+}
+
+.track.on {
+  background: var(--accent);
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-fast);
+  pointer-events: none;
+}
+
+.on .thumb {
+  transform: translateX(16px);
+}
+
+.input:focus-visible ~ .thumb {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

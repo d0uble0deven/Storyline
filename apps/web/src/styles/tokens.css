@@ -1,0 +1,81 @@
+/* Storyline design tokens — the single source of visual truth. */
+:root {
+  /* Color — warm neutral foundation, one ember accent. */
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --surface-2: #f3f1ec;
+  --surface-3: #ebe8e1;
+  --ink: #211d19;
+  --ink-2: #5c554d;
+  --ink-3: #8d857a;
+  --line: #e6e2da;
+  --line-strong: #d4cfc5;
+
+  --accent: #c94f2e;
+  --accent-hover: #b04326;
+  --accent-soft: #f8e9e3;
+  --accent-ink: #8f3517;
+
+  --ok: #3d7a4f;
+  --ok-soft: #e5efe7;
+  --warn: #9a6a10;
+  --warn-soft: #f6ecd6;
+  --danger: #b03a30;
+  --danger-soft: #f6e4e2;
+  --info: #33608a;
+  --info-soft: #e5edf5;
+
+  --video-bg: #17130f;
+  --video-ink: #f3efe8;
+
+  /* Typography. */
+  --font-display: "Iowan Old Style", "Palatino Nova", Palatino, Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+
+  /* Spacing. */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+
+  /* Radius — used selectively. */
+  --r-sm: 5px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-full: 999px;
+
+  /* Elevation. */
+  --shadow-sm: 0 1px 2px rgba(33, 29, 25, 0.06);
+  --shadow-md: 0 3px 14px rgba(33, 29, 25, 0.09);
+  --shadow-lg: 0 12px 40px rgba(33, 29, 25, 0.16);
+
+  /* Motion. */
+  --t-fast: 130ms ease;
+  --t-med: 220ms ease;
+
+  /* Layers. */
+  --z-sticky: 20;
+  --z-dropdown: 30;
+  --z-modal: 100;
+  --z-toast: 110;
+
+  /* Layout. */
+  --sidebar-w: 228px;
+  --topbar-h: 58px;
+  --content-max: 1220px;
+}
